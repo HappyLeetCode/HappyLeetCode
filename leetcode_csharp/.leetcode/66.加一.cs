@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public class Solution {
+public class Solution {n
     public int[] PlusOne(int[] digits) {
         for (int i = digits.Length -1; i >= 0; i--)
         {
