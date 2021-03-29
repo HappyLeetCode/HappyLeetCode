@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=226 lang=csharp
+ * @lc app=leetcode.cn id=100 lang=csharp
  *
- * [226] 翻转二叉树
+ * [100] 相同的树
  */
 
 // @lc code=start
@@ -19,13 +19,8 @@
  * }
  */
 public class Solution {
-    public TreeNode InvertTree(TreeNode root) {
-        if (root == null) return root;
-        TreeNode left = InvertTree(root.left);
-        TreeNode right = InvertTree(root. right);
-        root.right = left;
-        root.left = right;
-        return root;
+    public bool IsSameTree(TreeNode p, TreeNode q) {
+
     }
 }
 // @lc code=end

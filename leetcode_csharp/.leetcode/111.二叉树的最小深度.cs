@@ -20,7 +20,12 @@
  */
 public class Solution {
     public int MinDepth(TreeNode root) {
-
+        if (root == null) return 0;
+        if (root.left == null) return MinDepth(root.right) + 1;
+        if (root.right == null) return MinDepth(root.left) + 1;
+        int x = MinDepth(root.left);
+        int y = MinDepth(root.right);
+        return Math.Min(x, y) + 1;
     }
 }
 // @lc code=end

@@ -7,10 +7,7 @@
 // @lc code=start
 public class Solution {
     public int ClimbStairs(int n) {
-        if (n < 3)
-        {
-            return n;
-        }
+        if (n < 3) return n;
         int j = 2, f1 = 1, f2 = 2, f3 = 3;
         while (j < n)
         {

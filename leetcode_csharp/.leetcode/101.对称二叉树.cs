@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=226 lang=csharp
+ * @lc app=leetcode.cn id=101 lang=csharp
  *
- * [226] 翻转二叉树
+ * [101] 对称二叉树
  */
 
 // @lc code=start
@@ -19,13 +19,8 @@
  * }
  */
 public class Solution {
-    public TreeNode InvertTree(TreeNode root) {
-        if (root == null) return root;
-        TreeNode left = InvertTree(root.left);
-        TreeNode right = InvertTree(root. right);
-        root.right = left;
-        root.left = right;
-        return root;
+    public bool IsSymmetric(TreeNode root) {
+
     }
 }
 // @lc code=end
